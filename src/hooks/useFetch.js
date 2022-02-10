@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import axios from "axios";
-import DayList from "../component/DayList";
 
 function useFetch(url) {
   const [data, setData] = useState([]);

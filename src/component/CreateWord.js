@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import useFetch from "../hooks/useFetch";
 import { useNavigate } from "react-router-dom";
-import { createEmitAndSemanticDiagnosticsBuilderProgram } from "typescript";
 
 function CreateWord() {
   const days = useFetch("http://localhost:3001/days");
@@ -13,9 +12,6 @@ function CreateWord() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(engRef);
-    console.log(engRef.current);
-    console.log(engRef.current.value);
 
     if (engRef.current.value === "") {
       alert("영어를 입력해주세용");
@@ -63,8 +59,6 @@ function CreateWord() {
       <div className="input_area">
         <label>Day</label>
 
-        {/* {console.log(days.data)} */}
-        {/* {console.log(days.data)} */}
         <select ref={dayRef}>
           {days.data &&
             days.data.map((day) => (

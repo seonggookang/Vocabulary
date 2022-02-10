@@ -3,7 +3,6 @@ import React, { useState } from "react";
 function Word({ word: w }) {
   const [isShow, setIsShow] = useState(false); // 한글 보여줄래 말래 state
   const [isDone, setIsDone] = useState(w.isDone); // 다외웠냐 안외웠냐
-  const [disable, setDisable] = useState(false);
 
   const [word, setWord] = useState(w);
 

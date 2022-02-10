@@ -4,7 +4,7 @@ import useFetch from "../hooks/useFetch";
 function DayList() {
   const days = useFetch("http://localhost:3001/days"); //fetch는 렌더링 된 직후 실행
   // 이제 커스텀훅스를 이용해서 API를 불러올 수 있다.
-  // console.log(days);
+
   // useEffect(() => {
   //   fetch("http://localhost:3001/days") //  promise 객체 반환 , axios로 바꿔보자!
   //     .then((res) => {
