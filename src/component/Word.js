@@ -65,15 +65,15 @@ function Word({ word: w }) {
       <tbody>
         <tr className={isDone ? "off" : ""}>
           <td className="checkbox_center">
-            <input type="checkbox" onChange={toggleDone} checked={isDone} />
+            <input type="checkbox" onChange={toggleDone} />
           </td>
           <td>{word.eng}</td>
           <td>{isShow ? <div>{word.kor}</div> : null}</td>
           <td className="delete">
-            <button className="de1 btn_del" onClick={del}>
+            <button className="de1 btn_del" onClick={del} disabled={isDone}>
               삭제
             </button>
-            <button className="de1" onClick={toggleShow} disabled={disable}>
+            <button className="de1" onClick={toggleShow} disabled={isDone}>
               뜻 {isShow === false ? "보이기" : "숨기기"}
             </button>
           </td>

@@ -42,15 +42,6 @@ a {
   justify-content: center;
   align-items: center;
 }
-.de1 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 10px;
-  height: 30px;
-  margin: 3px;
-  font-size: 10px;
-}
 
 .header {
   position: relative;
@@ -104,6 +95,7 @@ table {
   }
 
   td {
+    @include flex();
     width: 300px;
     height: 55px;
     word-break: break-all;
@@ -120,9 +112,22 @@ table {
   }
 }
 
+.de1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px;
+  height: 30px;
+  margin: 3px;
+  font-size: 10px;
+}
+
 .off td {
   background: #eee;
   color: #ccc;
+  .de1 {
+    opacity: 0.3;
+  }
 }
 
 .btn_del {
