@@ -1,0 +1,57 @@
+{
+  "days": [
+    {
+      "id": 1,
+      "day": 1
+    },
+    {
+      "id": 2,
+      "day": 2
+    },
+    {
+      "id": 3,
+      "day": 3
+    },
+    {
+      "day": 4,
+      "id": 4
+    }
+  ],
+  "words": [
+    {
+      "id": 3,
+      "day": 2,
+      "eng": "car",
+      "kor": "자동차",
+      "isDone": false
+    },
+    {
+      "id": 5,
+      "day": 3,
+      "eng": "school",
+      "kor": "학교",
+      "isDone": false
+    },
+    {
+      "day": "1",
+      "eng": "keyboard",
+      "kor": "키보드",
+      "isDone": false,
+      "id": 18
+    },
+    {
+      "day": "2",
+      "eng": "community",
+      "kor": "커뮤니티",
+      "isDone": false,
+      "id": 19
+    },
+    {
+      "day": "4",
+      "eng": "wonderful",
+      "kor": "원더풀",
+      "isDone": false,
+      "id": 21
+    }
+  ]
+}
