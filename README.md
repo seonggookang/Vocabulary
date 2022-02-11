@@ -14,7 +14,10 @@
 - 단어 추가 page에서 글자들이 입력 되지 않은상태로 저장 클릭시 에러 알림창.
 - 네트워크 환경이 불안정한 상황을 고려하여 Loading 표시 구현(구매 전환율에 영향 미치는 요소)
 - navigate, useParams를 이용하여 URL의 endpoint를 이용하여 전날,다음날 페이지 이동
-- axios,fetch로 서버 data 호출
+- axios,fetch로 서버 data 호출   
 
-## 🎬 프로젝트 구현 페이지(아래 링크 클릭시 직접 다뤄볼 수 있음)
-demo : 서버연결시,https://vucabulary.netlify.app/
+ 
+
+
+
+
