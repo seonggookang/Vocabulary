@@ -1,6 +1,6 @@
 # 영단어장 구현 완료 Skills : React, scss 
 - 개발 기간 : 3days
-### 특이점: react-router-dom version이 5 -> 6으로 되면서 여러 문법들이 변경됨.
+### 특이점 : react-router-dom version이 5 -> 6으로 되면서 여러 문법들이 변경됨.
 
 ## ⚙️ 적용기술
 - FrontEnd : React, HTML5, CSS3 , SCSS
