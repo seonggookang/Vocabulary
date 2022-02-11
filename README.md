@@ -17,4 +17,4 @@
 - axios,fetch로 서버 data 호출
 
 ## 🎬 프로젝트 구현 페이지(아래 링크 클릭시 직접 다뤄볼 수 있음)
-demo : https://vucabulary.netlify.app/
+demo : 서버연결시,https://vucabulary.netlify.app/
