@@ -3,11 +3,12 @@ import { useNavigate } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 
 function CreateDay() {
-  const days = useFetch("http://localhost:3001/days");
+  const days = useFetch("http://localhost:3004/days");
+  // const days = useFetch("/data/data.json/days");
   const navigate = useNavigate();
 
   const addDay = () => {
-    fetch(`http://localhost:3001/days/`, {
+    fetch(`http://localhost:3004/days/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -26,7 +27,9 @@ function CreateDay() {
   return (
     <div>
       <h1>현재 일수 : {days.data && days.data.length}</h1>
-      <button onClick={addDay}>Day 추가</button>
+      <button className="btn hover3" onClick={addDay}>
+        Day 추가
+      </button>
     </div>
   );
 }

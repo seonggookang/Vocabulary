@@ -2,13 +2,18 @@ import { Link } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 
 function DayList() {
-  const days = useFetch("http://localhost:3001/days"); //fetch는 렌더링 된 직후 실행
+  const days = useFetch("http://localhost:3001/days");
+  console.log(days);
+  //fetch는 렌더링 된 직후 실행
+  // const days = useFetch("/data/data.json/days");
+  //fetch는 렌더링 된 직후 실행
   // 이제 커스텀훅스를 이용해서 API를 불러올 수 있다.
 
   // useEffect(() => {
-  //   fetch("http://localhost:3001/days") //  promise 객체 반환 , axios로 바꿔보자!
+  //   fetch("http://localhost:3004/days") //  promise 객체 반환 , axios로 바꿔보자!
   //     .then((res) => {
-  //       // res는 http응담. json으로 바꿔주는 작업 필요(이게 싫어서 axios사용한다)
+  //      res는 http응담. json으로 바꿔주는 작업 필요
+  //(이게 싫어서 axios사용한다)
   //       return res.json(); //  json으로 변환 후 promise반환
   //     })
   //     .then((data) => {
