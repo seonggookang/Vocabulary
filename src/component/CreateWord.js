@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 
 function CreateWord() {
   const days = useFetch("http://localhost:3001/days");
+
+  console.log(days);
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
   const engRef = useRef(null);
@@ -23,7 +25,8 @@ function CreateWord() {
 
     if (!isLoading) {
       setIsLoading(true);
-      fetch(`http://localhost:3001/words/`, {
+      fetch(`http://localhost:3001/words`, {
+        // fetch(`/data/data.json/words/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -54,7 +57,7 @@ function CreateWord() {
       </div>
       <div className="input_area">
         <label>Kor</label>
-        <input type="text" placeholder="컴퓨 터" ref={korRef} />
+        <input type="text" placeholder="컴퓨터" ref={korRef} />
       </div>
       <div className="input_area">
         <label>Day</label>
@@ -68,7 +71,11 @@ function CreateWord() {
             ))}
         </select>
       </div>
-      <button style={{ opacity: isLoading ? 0.3 : 1 }} onClick={onSubmit}>
+      <button
+        className="btn hover3"
+        style={{ opacity: isLoading ? 0.3 : 1 }}
+        onClick={onSubmit}
+      >
         {isLoading ? "Saving..." : "저장"}
       </button>
     </form>
