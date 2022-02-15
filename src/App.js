@@ -22,6 +22,7 @@ function App() {
           <Route path="/create_day" element={<CreateDay />} />
           <Route path="/slick" element={<SimpleSlider />} />
           <Route path="/para" element={<Parallax />} />
+
           <Route path="/*" element={<EmptyPage />} />
 
           {/* 기본적으로 exact가 들어가있고 wild(광범위하게) 다루고 싶으면 뒤에 *(별표)포함 */}
